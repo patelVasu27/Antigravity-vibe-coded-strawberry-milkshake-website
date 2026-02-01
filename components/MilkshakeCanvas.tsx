@@ -58,6 +58,13 @@ export default function MilkshakeCanvas() {
             offsetY = 0;
         }
 
+        // Fix: Mobile centering adjustment
+        // User reported glass is slightly left, so we move it right.
+        const isMobile = width < 768; // Standard mobile breakpoint
+        if (isMobile) {
+            offsetX += 60; // Shift right by 60px on mobile
+        }
+
         ctx.clearRect(0, 0, width, height);
         ctx.fillStyle = "#050505";
         ctx.fillRect(0, 0, width, height); // Background fill
