@@ -22,7 +22,7 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
         >
-            <div className="absolute top-10 left-0 w-full text-center z-50 pointer-events-none">
+            <div className="absolute inset-0 h-screen flex items-center justify-center z-50 pointer-events-none">
                 <p className="text-white/50 text-sm uppercase tracking-widest">
                     Scroll up action to see animation
                 </p>
