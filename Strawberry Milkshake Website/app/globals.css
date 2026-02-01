@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), sans-serif;
+  --font-serif: var(--font-serif), serif;
+
+  --color-brand-black: #050505;
+  --color-brand-pink: #FF4D6D;
+  --color-brand-espresso: #2C1A1A;
+  --color-brand-gold: #D4AF37;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #050505;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4d6d;
+}
+
+/* Utilities for hiding scrollbar but allowing scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
