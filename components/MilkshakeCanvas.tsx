@@ -60,9 +60,12 @@ export default function MilkshakeCanvas() {
 
         // Fix: Mobile centering adjustment
         // User reported glass is slightly left, so we move it right.
+        // Dynamic Offset: Starts at +20px (less shift) and ends at +45px (perfect alignment).
         const isMobile = width < 768; // Standard mobile breakpoint
         if (isMobile) {
-            offsetX += 45; // Shift right by 45px on mobile
+            const progress = index / (FRAME_COUNT - 1);
+            const dynamicOffset = 20 + (progress * (45 - 20)); // Linear interpolation: 20 -> 45
+            offsetX += dynamicOffset;
         }
 
         ctx.clearRect(0, 0, width, height);
