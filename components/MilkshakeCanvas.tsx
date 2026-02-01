@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import { useScroll, useMotionValueEvent, useTransform, motion, MotionValue } from "framer-motion";
 
-const FRAME_COUNT = 192;
+const FRAME_COUNT = 105;
 
 export default function MilkshakeCanvas() {
     const containerRef = useRef<HTMLDivElement>(null);
