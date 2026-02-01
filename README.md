@@ -1,2 +1,2 @@
 # Antigravity-vibe-coded-strawberry-milkshake-website
-I Vibe coded my first website using google antigravity.
+This is my first vibe coded website using google antigravity.
