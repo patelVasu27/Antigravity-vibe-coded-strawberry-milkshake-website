@@ -10,7 +10,7 @@
 
 **An experimental, visually playful web experience inspired by Google Antigravity — wrapped in a strawberry milkshake aesthetic.**
 
-[Live Demo](https://strawberry-milkshake-website.vercel.app) ·
+[Live Demo](https://antigravity-vibe-coded-strawberry-m.vercel.app)
 [Quick Start](QUICK_START.md)
 
 </div>
